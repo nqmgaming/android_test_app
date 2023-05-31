@@ -1,0 +1,37 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- your app branding color for the app bar -->
+        <item name="colorPrimary">#F1DA0F</item>
+        <!-- darker variant for the status bar and contextual app bars -->
+        <item name="colorPrimaryDark">#BD285B</item>
+        <!-- theme UI controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="android:windowBackground">#D5938E</item>
+        <item name="colorControlNormal">#F4EBEB</item>
+        <item name="colorControlActivated">@color/grey_100</item>
+        <item name="colorControlHighlight">#F3E7E7</item>
+        <item name="android:textColorHint">#000000</item>
+        <item name="colorButtonNormal">#CCBA1B</item>
+        <item name="android:colorButtonNormal" tools:targetApi="lollipop">#BDB035</item>
+    </style>
+
+    <style name="TextLabel" parent="TextAppearance.AppCompat">
+        <!-- hint color and label color in False State -->
+        <item name="android:textColorHint">#000000</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:labelTextSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000000</item>
+        <!-- label color in True State and bar color in False and True State -->
+        <item name="colorAccent">#2893E8</item>
+        <item name="colorControlNormal">@color/grey_100</item>
+        <item name="colorControlActivated">@color/grey_100</item>
+    </style>
+
+    <style name="HiddenTitleTheme" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bggg"
+    android:fitsSystemWindows="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top"
+        tools:context=".ui.profile.ProfileFragment">
+
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/imgAvatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/default_avatar"
+            android:scaleType="centerCrop"
+            android:background="@drawable/circle_background"
+            />
+
+        <!--    TextView Full Name Default is Nguyễn Quang Minh-->
+        <TextView
+            android:id="@+id/txtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nguyên Quang Minh"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+        <!--    Textview id default is PH31902-->
+        <TextView
+            android:id="@+id/txtID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PH31902"
+            android:textStyle="bold"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center|top"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp">
+
+            <!--        Button Edit Profile-->
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:drawableLeft="@drawable/edit"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF"
+                android:onClick="editProfile" />
+
+            <!--        Button Security Account-->
+            <Button
+                android:id="@+id/btnSecurityAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Security Account"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF"
+                android:drawableLeft="@drawable/security"
+                android:paddingLeft="5dp"
+                android:onClick="securityAccount" />
+
+            <!--        Button Logout-->
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_background"
+                android:textColor="#FFFFFF"
+                android:drawableLeft="@drawable/logout"
+                android:paddingLeft="5dp"
+                android:onClick="logout" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</ScrollView>

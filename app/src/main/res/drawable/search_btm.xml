@@ -1,0 +1,11 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color of the bottom line -->
+    <item android:drawable="@android:color/white" />
+
+    <!-- Bottom line -->
+    <item android:top="-2dp" android:left="-2dp" android:right="-2dp">
+        <shape android:shape="rectangle"><!-- Color of the bottom line -->
+            <corners android:radius="2dp" /> <!-- Radius of the line's corners -->
+        </shape>
+    </item>
+</layer-list>
